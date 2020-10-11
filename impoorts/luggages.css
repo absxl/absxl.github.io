@@ -1,3 +1,9 @@
+//**
+Collection of snippets dude this looks more like a theme ok idk
+most snippets are credited, mostly done by me :^) also yeah all work credited and if you have suggestions just idk pull request 
+I am bad at introductions man I don't know this is a lightweight mod its cool copy next line for cool gamer moments
+@import url("https://absxl.github.io/impoorts/luggages.css"); 
+**//
 @import url('https://monstrousdev.github.io/themes/addons/user-tags.css');
 
 @import url("https://discord-custom-gradient-names.github.io/gradient/dist/main.min.css");
@@ -77,7 +83,164 @@
 	z-index: 1;
 }
 
-/* animated avatar over */
+
+/* Chat rounded */
+/*absol#0666 x LuckFire#4800*/
+
+.members-1998pB {
+  border-radius: 15px 15px 0 0 !important;
+}
+.membersWrap-2h-GB4, .members-1998pB {
+  left: 15px;
+  margin-right: 10px
+}
+.chat-3bRxxu {
+  background: var(--background-tertiary);
+}
+.chatContent-a9vAAp {
+  background-color: var(--background-primary);
+  border-radius: 0 15px 0 0 !important;
+  left: 25px;
+  margin-left: -25px
+}
+.sidebar-2K8pFh, .chat-3bRxxu, .container-3Mxszk, .container-1D34oG, .applicationStore-1pNvnv {
+   border-radius: 15px 15px 0 0 !important
+}
+
+.chat-3bRxxu, .container-1D34oG, .container-3Mxszk, .applicationStore-1pNvnv {
+   position: relative;
+   left: 5px;
+   padding-right: 5px
+}
+
+
+/* Round Bundle */
+/* absol#0666 */
+
+.message-2qnXI6, .mentioned-xhSam7 {
+    border-radius: 24px 24px 24px 24px;
+    margin-right: 20px;
+}
+
+.wrapper-2aW0bm,.button-1ZiXG9.selected-LCBEAU,.button-1ZiXG9,.powercord-snippet-apply:not(.applied) div:hover,.powercord-snippet-apply div  {
+    border-radius: 24px !important;
+    }
+
+.connectedAccount-36nQx7{
+  border-radius: 50px;
+}
+
+.content-3at_AU, .layout-2DM8Md{
+  border-radius: 50px;
+}
+
+.mention {
+  border-radius: 50px;
+}
+
+
+/* Transparent screenshare/call*/
+/* absol#0666 */
+
+.pictureInPictureWindow-1B5qSe{
+    width: 440px;
+    height: 248px;
+    opacity: 60%;
+}
+
+.pictureInPictureWindow-1B5qSe:hover{
+        opacity: 100%;
+}
+
+
+/* Hide Textbox when you don't have permission */
+/* absol#0666*/ 
+
+.channelTextAreaDisabled-8rmlrp>div {
+    display: none;
+}
+
+
+/* Remove nitro gift */
+/* absol#0666 */
+
+[href="/store"],
+.buttons-3JBrkn > .button-38aScr.noFocus-2C7BQj {
+ display: none;
+}
+
+
+/*Better powercord quickcss */
+/* absol#0666 */
+
+.powercord-quickcss{
+  --editor-height: 45vw !important;
+}
+.CodeMirror-code {
+  font-size: 1.3rem;
+}
+
+
+/* Make discord home thing animated */
+/* absol#0666 */
+
+.homeIcon-tEMBK1 {
+    animation: Home 1.5s infinite ease-in-out;
+  }
+  @keyframes Home {
+    0% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(4deg) scale(1.01);
+    }
+    100% {
+      transform: rotate(-4deg);
+    }
+  }
+
+
+/* Center profile tabs */
+/* absol#0666 */
+
+.tabBar-2MuP6-{ justify-content: center; 
+}
+.top-28JiJ-:last-child .item-PXvHYJ:last-child { margin-right: 0; 
+}
+
+
+/* Blur Bundle */
+/* absol#0666 */
+
+.theme-dark .userSettingsAccount-2eMFVR .viewBody-2Qz-jg {
+    filter: blur(4px);
+}
+
+.theme-dark .userSettingsAccount-2eMFVR .viewBody-2Qz-jg:hover {
+    filter: blur(0px);
+    transition: filter .3s;
+}
+.subText-V8PTt8 {
+    filter: blur(2px);
+}
+
+.subText-V8PTt8:hover {
+    filter: blur(0px);
+    transition: filter .3s;
+}
+
+.paymentSourceLabel-1lo4Ca {
+    filter: blur(4px);
+}
+
+.paymentSourceLabel-1lo4Ca:hover {
+    filter: blur(0px);
+}
+
+
+/* Animated bundle v.2 */
+/* absol#066 */
+
 .avatar-1BDn8e.clickable-1bVtEA {
     display: inline-block;
     cursor: pointer;
@@ -98,7 +261,7 @@
 .avatar-SmRMf2:hover {
       transform: scale(1.1);
   }
-/* animated icon over */
+
 .button-14-BFJ, .grow-q77ONN, .iconItem-1-bXkn, .closeButton-2GCmT5, .icon-22AiRD, .addButton-1BORrom, .closeButton-1tv5uR {
     transition: all .2s ease-in-out;
 }
@@ -108,32 +271,8 @@
 }
 
 
-/* Enlarge Emoji in details popout */
-/*Freeplay#5676*/
-.emojiSection-3Fb9ix > .noWrap-3jynv6, .emojiSection-3Fb9ix {
-  flex-wrap: wrap;
-}
-.emojiSection-3Fb9ix img ~ div {
-  margin-left: 0 !important;
-  margin-top: 10px !important;
-}
-.emojiSection-3Fb9ix img {
-  margin: auto;
-  min-width: 100%;
-  height: auto !important;
-}
-
-
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
-}
-
 /* Litterally me */
+/* absol#0666 */
 
 .avatar-1BDn8e[src*="194830015353847817"] + h2 .timestamp-3ZCmNB::before {
 	content: '©'; 
@@ -159,17 +298,67 @@
 } 
 
 
-/* Transparent screenshare/call*/
+/* Revert switches */
+/* absol#0666 */
 
-.pictureInPictureWindow-1B5qSe{
-    width: 440px;
-    height: 248px;
-    opacity: 60%;
+svg.slider-TkfMQL svg {
+  display: none;
 }
 
-.pictureInPictureWindow-1B5qSe:hover{
-        opacity: 100%;
+.container-3auIfb:not([style*="125"]) {
+  background-color: #7289da !important;
 }
+
+
+/* spin spin spotify */
+/* absol#0666 */
+
+.powercord-spotify .avatarWrapper-2yR4wp {
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/* Enlarge Emoji in details popout */
+/* Freeplay#5676 */
+
+.emojiSection-3Fb9ix > .noWrap-3jynv6, .emojiSection-3Fb9ix {
+  flex-wrap: wrap;
+}
+.emojiSection-3Fb9ix img ~ div {
+  margin-left: 0 !important;
+  margin-top: 10px !important;
+}
+.emojiSection-3Fb9ix img {
+  margin: auto;
+  min-width: 100%;
+  height: auto !important;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+/* Dm's status written */
+/* missing credits */
 
 [aria-label="Online"]::after {
    content: 'ONLINE';
@@ -210,7 +399,8 @@
 
 
 /* Better roles */
-/*Bowser65#0001 */
+/* Bowser65#0001 */
+
 .role-2irmRk {
   position: relative;
   overflow: hidden;
@@ -232,8 +422,10 @@
   border-top: none;
 }
 
-/*Call dock*/
+
+/* Call dock */
 /* DanKSpooKLy#1337 */
+
 .wrapper-3EGhDO {
     background-color: var(--background-secondary);
     border-radius: 25px;
@@ -253,8 +445,10 @@
     background: none !important;
 }
 
-/* better bot tags + nice little hover */
+
+/* Better bot tags + nice little hover */
 /* Skullbite#5245 */
+
 .botTagRegular-2HEhHi {
     transition: .5s;
     background: rgba(114,137,218,0.1);
@@ -268,8 +462,9 @@
 }
 
 
-/*Yellow Permission Ticks*/
+/* Yellow Permission Ticks */
 /* botato#6883 */
+
 .passthroughSelected-1Eq0Kl {
   background-color: #ffba00 !important;
 }
@@ -299,8 +494,10 @@
   border-color: var(--background-tertiary) !important;
 }
 
+
 /* Better Popped Out QuickCSS */
 /* botato#6883 */
+
 .powercord-quickcss.popped-out {
   overflow: hidden;
   border: 1px solid var(--background-tertiary);
@@ -335,14 +532,9 @@
 }
 
 
-/* remove nitro gift */
+/* Dm search bubble */
+/* missing credits */
 
-[href="/store"],
-.buttons-3JBrkn > .button-38aScr.noFocus-2C7BQj {
- display: none;
-}
-
-/*dm search bubble*/
 #app-mount .privateChannels-1nO12o .searchBar-6Kv8R2 {
   position: absolute;
   bottom: 20px;
@@ -421,14 +613,9 @@
 }
 
 
-/* Hide Textbox when you don't have permission */
-.channelTextAreaDisabled-8rmlrp>div {
-    display: none;
-}
-
-
-/* dake ripple effect on over */
+/* Fake ripple effect on over */
 /*Tropical#4355*/
+
 .iconWrapper-2OrFZ1::after {
     content:'';
     position:absolute;
@@ -450,54 +637,9 @@
     transition: opacity 50ms linear, transform 150ms ease;
 }
 
-/* Make discord home thing animated */
-
-.homeIcon-tEMBK1 {
-    animation: Home 1.5s infinite ease-in-out;
-  }
-  @keyframes Home {
-    0% {
-      transform: rotate(-4deg);
-    }
-    50% {
-      transform: rotate(4deg) scale(1.01);
-    }
-    100% {
-      transform: rotate(-4deg);
-    }
-  }
-
-/* Blur Account */
-.theme-dark .userSettingsAccount-2eMFVR .viewBody-2Qz-jg {
-    filter: blur(4px);
-}
-
-.theme-dark .userSettingsAccount-2eMFVR .viewBody-2Qz-jg:hover {
-    filter: blur(0px);
-    transition: filter .3s;
-}
-
-/* Blur Billing */
-.subText-V8PTt8 {
-    filter: blur(2px);
-}
-
-.subText-V8PTt8:hover {
-    filter: blur(0px);
-    transition: filter .3s;
-}
-
-/* Blur Subscription */
-
-.paymentSourceLabel-1lo4Ca {
-    filter: blur(4px);
-}
-
-.paymentSourceLabel-1lo4Ca:hover {
-    filter: blur(0px);
-}
 
 /* Dropdown Menu */
+/* Leeprky#1234 */
 
 div[id="message-actions"] {
   min-width: 0px;
@@ -510,34 +652,15 @@ div[id="message-actions"]:hover {
   transition: 0.5s;
 }
 
-/* Cleaner status picker with gradient buttons */
-
-#status-picker .separator-2I32lJ, #status-picker .description-2L932D {
-  display: none;
-}
-#status-picker .focused-3afm-j {
-  background: linear-gradient(45deg, #2b45a2, #7289da);
-}
-#status-picker .focused-3afm-j#status-picker-online {
-  background: linear-gradient(45deg, #21583f, #43b581);
-}
-#status-picker .focused-3afm-j#status-picker-idle {
-  background: linear-gradient(45deg, #915c03, #faa61a);
-}
-#status-picker .focused-3afm-j#status-picker-dnd {
-  background: linear-gradient(45deg, #aa0e0e, #f04747);
-}
-#status-picker .focused-3afm-j#status-picker-invisible {
-  background: linear-gradient(45deg, #3a4047, #747f8d);
-}
-
 
 /* Friends list grid*/
+/* missing credits */
+
 .peopleListItem-2nzedh {
     position: relative;
     display: inline-grid;
     height: 175px !important;
-    width: 315px;
+    width: 270px;
     margin: 1% !important;
     padding: 0 !important;
     border-radius: 5px;
@@ -553,9 +676,10 @@ div[id="message-actions"]:hover {
   transform: scale(0.95);}
 .discordTag-2_tqUA.nameTag-m8r81H { /* Name */
     position: absolute;
+  transform: scale(1.15);
     display: block;
     top: 30px;
-    left: 64px;
+    left: 60px;
     color: rgba(255,255,255,0.65);
     font-size: 13px;
     overflow: visible;
@@ -569,12 +693,13 @@ div[id="message-actions"]:hover {
     opacity: 1 !important;
     transition: .15s ease color;}
 .avatar-3W3CeO.wrapper-3t9DeA{    /* Avatar */
-    margin-bottom: 85px;
+    transform: scale(1.05);
     margin-left: 15px !important;}
 .actions-1SQwjn {     /* action buttons */
     position: absolute;
-    left: 69%;
-    top: 26px;}
+    left: 2.5%;
+    top: 100px;
+		transform: scale(1.05);}
 .subtext-24R4-w{  /* Status position */
     position: absolute;
     background-color: #7289da;
@@ -587,7 +712,6 @@ div[id="message-actions"]:hover {
     top: 0;
     left: 0;
 }
-
 
 /* Online */
 .avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Online"] ~ div > .subtext-24R4-w {
@@ -609,26 +733,12 @@ div[id="message-actions"]:hover {
 .avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Streaming"] ~ div > .subtext-24R4-w {
     background: #593695;}
 
-/* spin spin spotify */
-.powercord-spotify .avatarWrapper-2yR4wp {
-
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+/* End Friend Grid */
 
 
-/*Better Voice Buttons*/
-/*snapperito#0001*/
+/* Better Voice Buttons */
+/* snapperito#0001 */
+
 .ping-2NgC8E {
     transform: scale(1.7);
     margin-left: 5px;
@@ -646,7 +756,9 @@ div[id="message-actions"]:hover {
     margin-left: 5px;
 }
 
+
 /* Better RTC Connection popout */
+/*missing credits*/
 
 .layerContainer-yqaFcK .layer-v9HyYc[style*="position: absolute; left: 100px;"] {
      left: 72px !important;
@@ -687,7 +799,9 @@ div[id="message-actions"]:hover {
      content: 'Packet Loss: ';
 }
 
+
 /* Compact Status Menu */
+/* missing credits */
 
 .status-1fhblQ, .description-2L932D {
     display: none;
@@ -718,16 +832,9 @@ div[id="message-actions"]:hover {
 }
 
 
-/*Better powercord quickcss */
-
-.powercord-quickcss{
-  --editor-height: 42vw !important;
-}
-.CodeMirror-code {
-  font-size: 1.2rem;
-}
-
 /* Search bar animated */
+/* missing credits */
+
 .searchBar-3dMhjb {
     width: 28px;
     transition: width 0.2s ease-in-out;
@@ -740,13 +847,9 @@ div[id="message-actions"]:hover {
 }
 
 
-/* Center profile tabs */
-.tabBar-2MuP6-{ justify-content: center; }
-.top-28JiJ-:last-child .item-PXvHYJ:last-child { margin-right: 0; }
+/* Powercord plugins section header */
+/* MulverineX#0001 */
 
-
-/*powercord plugins section header*/
-/*MulverineX#0001*/
 .item-PXvHYJ[data-item-id=pc-updater] {
     height: 4.65rem;
     align-items: unset !important;
@@ -777,31 +880,10 @@ div[id="message-actions"]:hover {
     font-size: 12px;
 }
 
-/* Round Bundle */
-.message-2qnXI6, .mentioned-xhSam7 {
-    border-radius: 24px 24px 24px 24px;
-    margin-right: 20px;
-}
-
-.wrapper-2aW0bm,.button-1ZiXG9.selected-LCBEAU,.button-1ZiXG9,.powercord-snippet-apply:not(.applied) div:hover,.powercord-snippet-apply div  {
-    border-radius: 24px !important;
-    }
-
-.connectedAccount-36nQx7{
-  border-radius: 50px;
-}
-
-.content-3at_AU, .layout-2DM8Md{
-  border-radius: 50px;
-}
-
-.mention {
-  border-radius: 50px;
-}
-
 
 /* Bigger quick reactions */
-/*rob#1160*/
+/* rob#1160 */
+
 .menu-3sdvDG .button-F9qN4n {
     width: 64px;
     height: 64px;
@@ -820,16 +902,10 @@ div[id="message-actions"]:hover {
     width: 50px;
 }
 
-/* Revert switched */
-svg.slider-TkfMQL svg {
-  display: none;
-}
-
-.container-3auIfb:not([style*="125"]) {
-  background-color: #7289da !important;
-}
 
 /* Old status */
+/* missing credit */
+
 .header-QKLPzZ rect[mask="url(#svg-mask-status-online)"], .userPopout-3XzG_A rect[mask="url(#svg-mask-status-online)"] {
     fill: #43b581;
 }
@@ -852,8 +928,10 @@ svg.slider-TkfMQL svg {
     mask: url(#svg-mask-status-online);
 }
 
-/* transparent tooltips*/
+
+/* Transparent tooltips*/
 /* LuckFire#4800 */
+
 .tooltip-2QfLtc {
    background-color: rgba(95, 118, 202, 0.5) !important;
    backdrop-filter: blur(1.5px);
@@ -869,3 +947,54 @@ svg.slider-TkfMQL svg {
    fill: #43B581;
 }
 
+
+/* Better Blocked Messages */
+/* Luckfire#4800 */
+
+.blockedMessageText-1fRjos:before {
+   content: "";
+   background: var(--background-secondary);
+   border-radius: 10px;
+   padding: 3px 0 3px 377px;
+   margin: 0 -310px 0 -64px;
+}
+
+.groupStart-23k01U.expanded-13sWhZ > div > div > div > .content-2M3n_H  > div:before {
+   padding-bottom: 0;
+   border-radius: 10px 10px 0 0;
+}
+.blockedIcon-IrnkVA > path {
+   fill: #F04747;
+}
+
+.groupStart-23k01U.expanded-13sWhZ {
+   background: var(--background-primary);
+   border-radius: 0px !important;
+}
+.groupStart-23k01U.expanded-13sWhZ > .message-2qnXI6 {
+   background: var(--background-secondary);
+   padding: 8px 0 8px 72px;
+   margin: -5px 4px 0 8px;
+   border-radius: 0px 10px 10px 10px;
+}
+.groupStart-23k01U.expanded-13sWhZ > div > div > div > .content-2M3n_H  > div:hover:before {
+   background: var(--background-secondary);
+}
+.groupStart-23k01U.expanded-13sWhZ > .message-2qnXI6:hover,
+.blockedMessageText-1fRjos:hover:before {
+   background: var(--background-tertiary);
+}
+
+.blockedIcon-IrnkVA {
+   margin-top: -2px;
+}
+
+.groupStart-23k01U.expanded-13sWhZ > .message-2qnXI6 > div,
+.groupStart-23k01U.expanded-13sWhZ > .message-2qnXI6 > div > .avatar-1BDn8e {
+   margin-left: -8px;
+}
+.groupStart-23k01U.expanded-13sWhZ > .message-2qnXI6 > .buttonContainer-DHceWr {
+   margin-right: -3px;
+}
+
+/* Star this follow me idk also add me on discord absol#0666 and my linked socials */
