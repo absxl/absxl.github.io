@@ -747,7 +747,7 @@ div[id="message-actions"]:hover {
 
 /*powercord plugins section header*/
 /*MulverineX#0001*/
-..item-PXvHYJ[data-item-id=pc-updater] {
+.item-PXvHYJ[data-item-id=pc-updater] {
     height: 4.65rem;
     align-items: unset !important;
 }
