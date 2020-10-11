@@ -852,5 +852,20 @@ svg.slider-TkfMQL svg {
     mask: url(#svg-mask-status-online);
 }
 
-
+/* transparent tooltips*/
+/* LuckFire#4800 */
+.tooltip-2QfLtc {
+   background-color: rgba(95, 118, 202, 0.5) !important;
+   backdrop-filter: blur(1.5px);
+   text-shadow: #000 1px 0 5px;
+}
+.tooltipPointer-3ZfirK {
+   border-top-color: rgba(95, 118, 202, 0.5) !important;
+}
+.tooltipContent-bqVLWK > .colorMuted-HdFt4q {
+   color: #F04747;
+}
+.tooltipContent-bqVLWK > .row-2OVM4t > svg > path {
+   fill: #43B581;
+}
 
