@@ -1036,4 +1036,26 @@ div[id="message-actions"]:hover {
 }
 
 
+/* Make dc work offline */
+/* Bowser65#0001 */
+
+.container-16j22k {
+  background: transparent;
+  pointer-events: none;
+}
+.container-16j22k * {
+  display: none;
+}
+.container-16j22k::before {
+  content: 'You\'ve gone offline';
+  display: block;
+  bottom: 24px;
+  right: 24px;
+  position: absolute;
+  padding: 8px 16px;
+  background-color: #f04747;
+  border-radius: 4px;
+  color: #fff;
+}
+
 /* Star this follow me idk also add me on discord absol#0666 and my linked socials */
