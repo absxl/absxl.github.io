@@ -28,6 +28,22 @@ header {
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
+.header-title a {
+    color: white; /* Set the desired color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition */
+    font-size: 0.9rem; /* Make the text a bit smaller */
+}
+
+.header-title a:hover {
+    background: linear-gradient(45deg, #ff9a9a, #f5a3b3, #bfa3f7, #a3b7fa); /* Lighter gradient colors */
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s ease infinite; /* Smooth gradient animation */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
+
 .social-icons {
     display: flex;
     gap: 15px;
@@ -43,7 +59,19 @@ header {
 .social-icons img:hover {
     transform: scale(1.1);
 }
-
+.social-icons a {
+    color: white; /* Set the initial color to white */
+    text-decoration: none; /* Remove underline */
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-weight: bold; /* Make the text bold */
+}
+.social-icons a:hover {
+    background: linear-gradient(45deg, #ff6b6b, #ff8c8c, #ffb3b3, #ffd6d6); /* Brighter gradient colors */
+    background-size: 200% 200%;
+    animation: gradientAnimation 3s ease infinite; /* Smooth gradient animation */
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+}
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
@@ -53,7 +81,7 @@ body {
     padding: 0;
     background: linear-gradient(-45deg, rgba(238, 119, 82, 0.8), rgba(231, 60, 126, 0.8), rgba(35, 166, 213, 0.8), rgba(35, 213, 171, 0.8));
     background-size: 400% 400%;
-    animation: gradientAnimation 300s ease infinite;
+    animation: gradientAnimation 100s ease infinite;
 }
 
 
@@ -61,12 +89,15 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 5px 10px; /* Adjust padding for a smaller size */
+    font-size: 12px; /* Reduced font size */
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px; /* Rounded corners for a notch-like appearance */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
 }
-
 nav ul {
     list-style-type: none;
     padding: 0;
