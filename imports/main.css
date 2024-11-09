@@ -1,5 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* General styles for mobile devices */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+    }
 
+    .header-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .name-title {
+        font-size: 2.5rem;
+    }
+
+    #about, #home, #social {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+        position: static;
+        transform: none;
+        width: auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
+
+/* Specific styles for very small devices */
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 1.2rem;
+    }
+
+    .name-title {
+        font-size: 2rem;
+    }
+
+    .social-icons {
+        gap: 5px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
 @keyframes gradientAnimation {
     0% { background-position: 0 50%; }
     50% { background-position: 100% 50%; }
@@ -231,13 +290,15 @@ button[type="submit"]:hover {
 /* Not making move the cards */
 .social-icons {
     display: flex;
-    gap: 15px;
-    position: absolute; /* Make the social-icons section positioned absolutely */
-    top: 50%; /* Adjust the top position as needed */
-    left: 50%; /* Adjust the left position as needed */
-    transform: translate(-50%, -50%); /* Center the social-icons section */
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    box-sizing: border-box;
 }
-
 #card {
     padding: 2rem; /* Use rem units for padding */
     margin-top: 2rem; /* Use rem units for margin */
