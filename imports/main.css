@@ -332,3 +332,26 @@ button[type="submit"]:hover {
     z-index: 1; /* Ensure it is behind other content */
     filter: blur(20px); /* Add blur to create a vapor effect */
 }
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    text-align: left;
+}
+
+#about p {
+    flex: 1 1 300px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start; /* Align text to the top */
+}
+
+#about img {
+    flex: 1 1 auto;
+    max-width: 21em;
+    height: 28em; /* Set the height to 4 lines of text */
+    margin-left: 20px;
+    border-radius: 10px;
+}
