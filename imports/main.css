@@ -350,8 +350,8 @@ button[type="submit"]:hover {
 
 #about img {
     flex: 1 1 auto;
-    max-width: 21em;
-    height: 28em; /* Set the height to 4 lines of text */
+    max-width: 30%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain the aspect ratio */
     margin-left: 20px;
     border-radius: 10px;
 }
