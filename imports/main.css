@@ -1,15 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 @keyframes gradientAnimation {
-    0% {
-        background-position: 0 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0 50%;
-    }
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
 }
 
 header {
@@ -24,34 +18,39 @@ header {
 .header-title {
     font-size: 2rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
 .header-title a {
-    color: white; /* Set the desired color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the text bold */
-    transition: color 0.3s ease; /* Smooth transition */
-    font-size: 0.9rem; /* Make the text a bit smaller */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.5s ease, color 0.5s ease;
+    font-size: 0.9rem;
 }
 
 .header-title a:hover {
-    background: linear-gradient(45deg, #ff9a9a, #f5a3b3, #bfa3f7, #a3b7fa); /* Lighter gradient colors */
+    background: linear-gradient(45deg, #ff9a9a, #f5a3b3, #bfa3f7, #a3b7fa);
     background-size: 200% 200%;
-    animation: gradientAnimation 3s ease infinite; /* Smooth gradient animation */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s ease infinite;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.5s ease, color 0.5s ease, font-size 0.5s ease;
 }
-
 .social-icons {
     display: flex;
     gap: 15px;
+
 }
 
 .social-icons img {
-    width: 30px; /* Adjust the size as needed */
-    height: 30px; /* Adjust the size as needed */
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -59,23 +58,31 @@ header {
 .social-icons img:hover {
     transform: scale(1.1);
 }
+
 .social-icons a {
-    color: white; /* Set the initial color to white */
-    text-decoration: none; /* Remove underline */
-    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
-    font-weight: bold; /* Make the text bold */
+    color: white;
+    text-decoration: none;
+    transition: background 0.5s ease, color 0.5s ease;
+    font-weight: bold;
 }
+
 .social-icons a:hover {
-    background: linear-gradient(45deg, #ff6b6b, #ff8c8c, #ffb3b3, #ffd6d6); /* Brighter gradient colors */
+    background: linear-gradient(45deg, #ff7f50, #ff6347, #ff4500, #ff8c00);
     background-size: 200% 200%;
-    animation: gradientAnimation 3s ease infinite; /* Smooth gradient animation */
-    -webkit-background-clip: text; /* Clip the background to the text */
-    -webkit-text-fill-color: transparent; /* Make the text transparent to show the gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s ease infinite;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background 0.5s ease, color 0.5s ease, font-size 0.5s ease;
 }
+
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
-    color: #ffffff;
+    color: #fff;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -84,20 +91,20 @@ body {
     animation: gradientAnimation 100s ease infinite;
 }
 
-
 footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px 10px; /* Adjust padding for a smaller size */
-    font-size: 12px; /* Reduced font size */
+    padding: 5px 10px;
+    font-size: 12px;
     position: fixed;
-    bottom: 10px; /* Adjust the distance from the bottom */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    border-radius: 10px; /* Rounded corners for a notch-like appearance */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better visibility */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -121,8 +128,11 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .name-title {
@@ -130,13 +140,13 @@ main {
     font-weight: 700;
     text-align: center;
     margin-top: 2rem;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    color: #ffffff;
+    color: #fff;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
@@ -160,6 +170,7 @@ form {
     display: flex;
     flex-direction: column;
     max-width: 300px;
+    margin: 0 auto;
 }
 
 input, textarea, button {
@@ -180,21 +191,8 @@ button {
 button:hover {
     background-color: #4a7d80;
 }
-main {
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the last value (0.1) to increase/decrease opacity */
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
 
-input[type="email"],
-textarea {
+input[type="email"], textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -205,13 +203,11 @@ textarea {
     font-size: 16px;
 }
 
-input[type="email"]::placeholder,
-textarea::placeholder {
+input[type="email"]::placeholder, textarea::placeholder {
     color: rgba(255, 255, 255, 0.7);
 }
 
-input[type="email"]:focus,
-textarea:focus {
+input[type="email"]:focus, textarea:focus {
     outline: none;
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.5);
@@ -230,4 +226,26 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Not making move the cards */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    position: absolute; /* Make the social-icons section positioned absolutely */
+    top: 50%; /* Adjust the top position as needed */
+    left: 50%; /* Adjust the left position as needed */
+    transform: translate(-50%, -50%); /* Center the social-icons section */
+}
+
+#card {
+    padding: 2rem; /* Use rem units for padding */
+    margin-top: 2rem; /* Use rem units for margin */
+    position: relative; /* Ensure the card section is positioned relative */
+}
+
+#about, #home, #social {
+    padding: 2rem; /* Use rem units for padding */
+    margin-bottom: 2rem; /* Use rem units for margin */
+    position: relative; /* Ensure these sections are positioned relative */
 }
