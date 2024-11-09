@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="imports/main.css">
 </head>
 <body>
+<div id="haze"></div>
 <header>
     <div class="header-title">Marcello Carletti
         <a href="index.html">Home</a>
@@ -31,5 +32,13 @@
 <footer>
     <p>&copy;2024 absxl. All rights reserved.</p>
 </footer>
+<script>
+    document.addEventListener('mousemove', function(e) {
+        const haze = document.getElementById('haze');
+        const hazeWidth = haze.offsetWidth / 2;
+        const hazeHeight = haze.offsetHeight / 2;
+        haze.style.transform = `translate(${e.clientX - hazeWidth}px, ${e.clientY - hazeHeight}px)`;
+    });
+</script>
 </body>
 </html>

@@ -289,10 +289,9 @@ button[type="submit"]:hover {
 
 /* Not making move the cards */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -309,4 +308,18 @@ button[type="submit"]:hover {
     padding: 2rem; /* Use rem units for padding */
     margin-bottom: 2rem; /* Use rem units for margin */
     position: relative; /* Ensure these sections are positioned relative */
+}
+#haze {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0));
+    pointer-events: none;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1; /* Ensure it is behind other content */
+    filter: blur(20px); /* Add blur to create a vapor effect */
 }
