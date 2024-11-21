@@ -313,7 +313,7 @@ button[type="submit"]:hover {
     position: relative; /* Ensure the card section is positioned relative */
 }
 
-#about, #home, #social {
+#about, #home, #social, #experience, #extracurricular, #skills {
     padding: 2rem; /* Use rem units for padding */
     margin-bottom: 2rem; /* Use rem units for margin */
     position: relative; /* Ensure these sections are positioned relative */
@@ -351,6 +351,22 @@ button[type="submit"]:hover {
 }
 
 .home-image img {
+    width: 100%; /* Ensure the image scales with the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 10px;
+}
+#about {
+    position: relative;
+}
+
+#imageDropdown {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15vw; /* 15% of the viewport width */
+}
+
+#imageContainer img {
     width: 100%; /* Ensure the image scales with the container */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 10px;
