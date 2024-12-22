@@ -19,20 +19,38 @@
 <main>
     <section id="home">
         <h1 class="name-title">Marcello Carletti<br></h1>
-        <div id="imageDropdown" class="dropdown">
-            <span onclick="toggleImage()">+ marcellocarleti.png</span>
-            <div id="imageContainer" class="imageContainer" style="display: none;">
-                <img src="imports/io.jpg" alt="My Picture">
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <img src="imports/io.jpg" class="modal-image">
             </div>
-
         </div>
+        <span id="imageText" onclick="openModal()">+ marcellocarletti.png</span>
     </section>
     <section id="about">
         <h2>More about me</h2>
         <p><br>
-            I am a university student pursuing a degree in Materials Engineering and Nanotechnology at Politecnico di Milano. Passionate about technology, materials science, programming, and music production, I thrive in both digital and instrumental contexts. A world traveler and sailor, I fluently speak English.
+            I am a university student pursuing a degree in Computer Science Engineering at Politecnico di Milano. Passionate about programming, technology, materials science and music production, I thrive in both digital and instrumental contexts. A world traveler and sailor, I can fluently speak English.
             <br></p>
 
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor's Degree in Computer Engineering (In Progress)</h3>
+                <p>Politecnico di Milano – Online (2024 Expected)</p>
+                <p>Additional coursework in Materials and Nanotechnology.</p>
+            </div>
+            <div class="education-item">
+                <h3>Digital Engineering Program (In Progress)</h3>
+                <p>ELIS Professional Program (2024 Expected)</p>
+                <p>Courses include Java SE11, Databases/SQL, Linux/Bash, JavaEE.</p>
+            </div>
+            <div class="education-item">
+                <h3>High School Diploma (2018-2023)</h3>
+                <p>Liceo Scientifico Istituto Santa Maria, Rome (RM).</p>
+            </div>
+        </section>
 
     </section>
     <section id="experience">
@@ -51,12 +69,23 @@
     <section id="extracurricular">
         <h2>Extracurricular Activities</h2>
         <div class="activity">
-            <h3>Participant, three times, Italian Model United Nations (IMUN)</h3>
-            <p><strong>Rome, Italy</strong> | <em>2017, 2018, 2021</em></p>
+
+            <h3>Model United Nations Delegate (IMUN):</h3><ul>
+                <li>Honorable Mention in three sessions for outstanding public speaking, negotiation, and problem-solving.</li>
+            </ul>
+            <h3>Music Enthusiast:</h3>
             <ul>
-                <li>Acted as a delegate in simulated UN sessions.</li>
-                <li>Awarded "Honorable Mention" for excellence in discussions and problem-solving.</li>
-                <li>Gained skills in public speaking, negotiation, and critical analysis of global issues.</li>
+                <li>Skilled in classical and flamenco guitar, with a passion for shoegaze and indie music production.
+
+                </li>
+            </ul>
+            <h3>Sailing Enthusiast:</h3>
+            <ul>
+                <li>Experienced sailor, fostering adaptability and composure under pressure.
+
+
+
+                </li>
             </ul>
         </div>
     </section>
@@ -67,10 +96,25 @@
             <li><strong>Languages:</strong>
                 <ul>
                     <li>English (C1, Cambridge Advanced Certificate, 2021)</li>
-                    <li>Intermediate French</li>
+                    <li>Programming Languages: Java, HTML, CSS, JavaScript, C++.</li>
+                    <li>Tools: IntelliJ, Clion, GIT, MySQL, Photoshop, MatLab, Ableton, Office Suite.</li>
+                    <li>Operating Systems: Windows, Linux.</li>
                 </ul>
             </li>
         </ul>
+    </section>
+    <section id="softskills">
+        <h2>SoftSkills</h2>
+
+
+                <ul>
+                    <li>Clear and persuasive communication.</li>
+                    <li>Teamwork and time management proficiency.</li>
+                    <li>Problem-solving and critical thinking.</li>
+                    <li>Adaptability and resilience.</li>
+                    <li>Public speaking and negotiation, honed through multiple IMUN experiences.</li>
+                </ul>
+
     </section>
 
 
@@ -128,6 +172,26 @@
     <p>&copy;2024 absxl. All rights reserved.</p>
 </footer>
 <script>
+    // Get the modal
+    var modal = document.getElementById("imageModal");
+
+    // Get the <span> element that opens the modal
+    var imageText = document.getElementById("imageText");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (imageText), open the modal
+    function openModal() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+</script>
+<script>
     document.addEventListener('mousemove', function(e) {
         const haze = document.getElementById('haze');
         const hazeWidth = haze.offsetWidth / 2;
@@ -135,8 +199,6 @@
         haze.style.transform = `translate(${e.clientX - hazeWidth}px, ${e.clientY - hazeHeight}px)`;
     });
 </script>
-<script>function toggleImage(){var e=document.getElementById("imageContainer"),t=document.querySelector("#imageDropdown span");""===e.style.display||"none"===e.style.display?(e.style.display="block",t.textContent="- my_picture.png"):(e.style.display="none",t.textContent="+ my_picture.png")}</script>
-<script>document.addEventListener("DOMContentLoaded",function(){let e={"invertedmouse.js":"document.addEventListener('mousemove', function(e) {\n\tdocument.documentElement.style.setProperty(\n\t\t'--x', \n\t\t(e.clientX + window.scrollX) + 'px');\n\tdocument.documentElement.style.setProperty(\n\t\t'--y', \n\t\t(e.clientY + window.scrollY) + 'px');\n});","main.py":'def hello_world():\n    print("Hello, world!")\nhello_world()',"dna.fasta":">sequence A\nggtaagtcctctagtacaaacacccccaatattgtgatataattaaaattatattcatat\ntctgttgccagaaaaaacacttttaggctatattagagccatcttctttgaagcgttgtc","main.rs":"pub fn play(&mut self, speed: u64) {\n\tlet cycle_wait_time = time::Duration::from_millis(speed);\n\tloop {\n\t\tself.Cycle();\n\t\tself.pretty_print_video();\n\t\tthread::sleep(cycle_wait_time);\n\t}\n}","protein.fasta":">sp|P31645|SC6A4_HUMAN Sodium-dependent serotonin transporter\nMETTPLNSQKQLSACEDGEDCQENGVLQKVVPTPGDKVESGQISNGYSAVPSPGAGDDTR\nHSIPATTTTLVAELHQGERETWGKKVDFLLSVIGYAVDLGNVWRFPYICYQNGGGAFLLP\nYTIMAIFGGIPLFYMELALGQYHRNGCISIWRKICPIFKGIGYAICIIAFYIASYYNTIM\nAWALYYLISSFTDQLPWTSCKNSWNTGNCTNYFSEDNITWTLHSTSPAEEFYTRHVLQIH\nRSKGLQDLGGISWQLALCIMLIFTVIYFSIWKGVKTSGKVVWVTATFPYIILSVLLVRGA\nTLPGAWRGVLFYLKPNWQKLLETGVWIDAAAQIFFSLGPGFGVLLAFASYNKFNNNCYQD\nALVTSVVNCMTSFVSGFVIFTVLGYMAEMRNEDVSEVAKDAGPSLLFITYAEAIANMPAS\nTFFAIIFFLMLITLGLDSTFAGLEGVITAVLDEFPHVWAKRRERFVLAVVITCFFGSLVT\nLTFGGAYVVKLLEEYATGPAVLTVALIEAVAVSWFYGITQFCRDVKEMLGFSPGWFWRIC\nWVAISPLFLLFIICSFLMSPPQLRLFQYNYPYWSIILGYCIGTSSFICIPTYIAYRLIIT\nPGTFKERIIKSITPETPTEIPCGDIRLNAV"},n="[ferry@alessandroferrari.live]$ ",a=document.getElementById("faketerminal"),L=0,I=Object.keys(e);function c(t,e=0,n){e<t.length?(a.textContent+=t[e],setTimeout(()=>c(t,e+1,n),50)):n&&n()}function o(t){a.textContent+=t}function G(){var t=I[L];c(e[t],0,function(){setTimeout(A,1e3),o("\n"),o(n)})}function A(){c("clear\n",0,function(){setTimeout(()=>{a.textContent="",L=(L+1)%I.length,t()},500)})}function t(){var t=`cat ./${I[L]}
-`;c(t,0,function(){setTimeout(G,1e3)})}t();})</script>
+
 </body>
 </html>

@@ -64,6 +64,15 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0 50%; }
 }
+section {
+     padding: 2rem;
+     margin-bottom: 2rem;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+
 
 header {
     display: flex;
@@ -137,7 +146,37 @@ header {
     font-size: 1.1rem;
     transition: background 0.5s ease, color 0.5s ease, font-size 0.5s ease;
 }
+/* Additional styles for text and headings */
+section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
 
+section p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Specific styles for the education section */
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.education-item p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+}
 body {
     font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.6;
@@ -155,8 +194,8 @@ body {
     rgba(75, 0, 130, 0.4),
     rgba(238, 130, 238, 0.4)
     );
-    background-size: 400% 400%;
-    animation: gradientAnimation 20s ease infinite;
+    background-size: 1000% 1000%;
+    animation: gradientAnimation 60s ease infinite;
 }
 
 footer {
@@ -370,4 +409,72 @@ button[type="submit"]:hover {
     width: 100%; /* Ensure the image scales with the container */
     height: auto; /* Maintain the aspect ratio */
     border-radius: 10px;
+}
+#home {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#about {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#education {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#experience {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#skills {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#extracurricular {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 700px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    display: flex;
+    gap: 10px;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: red; /* Change the color to red */
+    font-size: 40px; /* Increase the font size */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: orangered; /* Change the hover/focus color to dark red */
+    text-decoration: none;
 }
