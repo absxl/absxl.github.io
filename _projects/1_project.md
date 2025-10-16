@@ -4,7 +4,7 @@ title: test 1
 description: this is a test
 img: assets/img/12.jpg
 importance: 0
-category: test
+category: fun
 related_publications: false
 ---
 
