@@ -51,7 +51,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/_pages/dropdown/";
           },
-        },{id: "books-the-godfather",
+        },{id: "post-site-release",
+        
+          title: "Site Release",
+        
+        description: "Announcing the release of my personal website built with Jekyll.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/release/";
+          
+        },
+      },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
           section: "Books",handler: () => {
